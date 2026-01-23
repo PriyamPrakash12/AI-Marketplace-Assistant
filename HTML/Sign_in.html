@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../CSS/sign_in.css">
+</head>
+<body>
+<div class="page-title">
+    Account Centre
+</div>
+
+<div class="page">
+    <div class="sign_in-container">
+        <div class="card-header">
+            <h1>Create your account</h1>
+        </div>
+
+        <div class="card-content">
+            <form onsubmit="return validateForm()">
+                <div class="field">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+
+                <div class="field">
+                    <label>Password *</label>
+                    <div class="password-box">
+                        <input type="password" id="password" required>
+                        <span class="eye"></span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Confirm password *</label>
+                    <div class="password-box">
+                        <input type="password" id="confirm-password" required>
+                        <span class="eye"></span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>First name *</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="field">
+                    <label>Last name *</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="field">
+                    <label type="dob">Date of birth *</label>
+                    <input type="date" id="dob" required>
+                    <span id="dobError" class="error"></span>
+                </div>
+
+                <div class="options">
+                    <button type="submit">Sign in</button>
+
+                    <div class="login-link">
+                        <a href="log_in.html">Already have an account?</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script src="../Script/validate.js"></script>
+</body>
+</html>
